@@ -1,0 +1,168 @@
+/* CareOnCall Frontend Styles */
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --danger-color: #f44336;
+    --success-color: #4CAF50;
+    --warning-color: #ff9800;
+    --dark-color: #333;
+    --light-color: #f5f5f5;
+    --text-color: #555;
+    --border-color: #ddd;
+}
+
+.careoncall-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.careoncall-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.careoncall-button:hover {
+    background: #45a049;
+}
+
+.careoncall-button.secondary {
+    background: var(--secondary-color);
+}
+
+.careoncall-button.secondary:hover {
+    background: #0b7dda;
+}
+
+.careoncall-button.danger {
+    background: var(--danger-color);
+}
+
+.careoncall-form-group {
+    margin-bottom: 15px;
+}
+
+.careoncall-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.careoncall-form-group input,
+.careoncall-form-group textarea,
+.careoncall-form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.careoncall-form-group input:focus,
+.careoncall-form-group textarea:focus,
+.careoncall-form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+.careoncall-alert {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border-left: 4px solid;
+}
+
+.careoncall-alert.success {
+    background-color: #d4edda;
+    border-color: var(--success-color);
+    color: #155724;
+}
+
+.careoncall-alert.danger {
+    background-color: #f8d7da;
+    border-color: var(--danger-color);
+    color: #721c24;
+}
+
+.careoncall-alert.warning {
+    background-color: #fff3cd;
+    border-color: var(--warning-color);
+    color: #856404;
+}
+
+.careoncall-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.careoncall-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.careoncall-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.careoncall-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.careoncall-table th {
+    background-color: var(--light-color);
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--dark-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.careoncall-table td {
+    padding: 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.careoncall-table tbody tr:hover {
+    background: var(--light-color);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .careoncall-form-group {
+        margin-bottom: 20px;
+    }
+
+    .careoncall-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .careoncall-table {
+        font-size: 14px;
+    }
+
+    .careoncall-table th,
+    .careoncall-table td {
+        padding: 8px;
+    }
+}
